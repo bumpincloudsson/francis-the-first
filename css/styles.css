@@ -23,18 +23,21 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
   line-height: 1.5;
-  background-color: var(--color-primary);
+  background-color: var(--color-tertiary);
 }
 
 h1,
 h2,
 h3 {
   color: var(--color-headings);
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 6.5rem;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -47,6 +50,10 @@ h3 {
 
 p {
   margin-top: 0;
+}
+
+.title__heading {
+  margin-bottom: 6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -113,5 +120,76 @@ p {
 
   .nav__link {
     font-size: 1.4rem;
+  }
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 5rem;
+  width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+}
+
+/* Aside */
+.aside__container {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.aside__heading {
+  color: var(--color-quaternary);
+  margin-bottom: 0;
+}
+
+.aside__list {
+  margin: 1.5rem;
+}
+
+.aside__item {
+  margin: 2rem;
+}
+
+.aside__link {
+  text-decoration: none;
+  color: rgb(255, 242, 0);
+}
+
+.aside__link:hover {
+  color: #f8da5b;
+}
+
+@media screen and (min-width: 1024px) {
+  .aside__container {
+    align-self: flex-start;
+    padding: 3rem;
+    margin-right: 2rem;
+  }
+
+  .aside__heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .aside__link {
+    font-size: 1.6rem;
   }
 }
